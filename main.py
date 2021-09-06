@@ -16,25 +16,26 @@ def buttonclick(args):
     workbook.save("mypasswords.xlsx")
     i=2
     cellx='B'+ str(i)
-    if args == 1:
+    while(args!=5):
+     if args == 1:
             if(cellx != ''):
                 i += 1
                 sheet[cellx]= password4
 
-    if args == 2:
+     if args == 2:
             if (cellx != ''):
                 i += 1
                 sheet[cellx] = password7
-    if args == 3:
+     if args == 3:
             if (cellx != ''):
                 i += 1
                 sheet[cellx] = password10
-    if args == 4:
+     if args == 4:
             if (cellx != ''):
                 i += 1
                 sheet[cellx] = password32
 
-    workbook.save("mypasswords.xlsx")
+     workbook.save("mypasswords.xlsx")
 
 #window
 a = tkinter.Tk()
